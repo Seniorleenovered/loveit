@@ -2,11 +2,14 @@
 <html lang="pt">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nossa História</title>
 
 <style>
+
 body{
 font-family:Arial;
 background:linear-gradient(135deg,#ff9ab5,#ffc2d1);
@@ -30,25 +33,10 @@ h1{
 color:#ff2e63;
 }
 
-.gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(255, 0, 128, 0.3);
-    transition: transform 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 20px #ff0080;
+.gallery img{
+width:100%;
+border-radius:12px;
+margin-top:10px;
 }
 
 .neon{
@@ -60,17 +48,15 @@ font-size:16px;
 cursor:pointer;
 color:white;
 background:#ff0080;
+
 box-shadow:
 0 0 10px #ff0080,
 0 0 20px #ff0080,
 0 0 40px #ff0080;
-transition: transform 0.2s;
 }
 
-.neon:hover {
-    transform: scale(1.05);
-}
 </style>
+
 </head>
 
 <body>
@@ -86,43 +72,37 @@ em um simples momento no IMVU, nossos caminhos se encontraram.
 </p>
 
 <div class="gallery">
-<img src="foto1.jpg" alt="Momento especial 1">
-<img src="foto2.jpg" alt="Momento especial 2">
-<img src="foto3.jpg" alt="Momento especial 3">
-<img src="foto4.jpg" alt="Momento especial 4">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+
 </div>
 
 <h3>🎵 NOSSA CANÇÃO</h3>
 
-<button class="neon" onclick="tocarMusica()">
-    ▶ TOCAR MÚSICA
+<button class="neon" onclick="tocar()">
+▶ TOCAR
 </button>
 
 <br><br>
 
 <audio id="musica">
-    <source src="Indila - Love Story (Video Oficial).mp3" type="audio/mpeg">
+<source src="Indila - Love Story (Video Oficial).mp3" type="audio/mpeg">
 </audio>
-
-<p style="color:#ff2e63; font-size:14px; margin-top:10px;">
-    ❤️ Indila - Love Story ❤️
-</p>
 
 </div>
 
 <script>
-function tocarMusica() {
-    var musica = document.getElementById("musica");
-    musica.play().catch(function(error) {
-        alert("Clique na página primeiro para tocar a música!");
-    });
+
+function tocar(){
+document.getElementById("musica").play();
 }
+
 </script>
 
 </body>
-</html>
-
-</body>
-
 
 </html>
+
