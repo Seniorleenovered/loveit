@@ -44,15 +44,20 @@ margin-top:20px;
 padding:12px 30px;
 border:none;
 border-radius:30px;
-font-size:16px;
+font-size:18px;
 cursor:pointer;
 color:white;
 background:#ff0080;
-
 box-shadow:
 0 0 10px #ff0080,
 0 0 20px #ff0080,
 0 0 40px #ff0080;
+transition: transform 0.2s;
+}
+
+.neon:hover {
+    transform: scale(1.05);
+    background:#ff4da6;
 }
 
 </style>
@@ -82,22 +87,22 @@ em um simples momento no IMVU, nossos caminhos se encontraram.
 
 <h3>🎵 NOSSA CANÇÃO</h3>
 
-<button class="neon" onclick="tocar()">
-▶ TOCAR
+<button class="neon" onclick="abrirMusica()">
+    ❤️ CLIQUE AQUI ❤️
 </button>
 
 <br><br>
 
-<audio id="musica">
-<source src="Indila - Love Story (Video Oficial).mp3" type="audio/mpeg">
-</audio>
+<p style="color:#ff2e63; font-size:14px;">
+    Indila - Love Story (Nossa música)
+</p>
 
 </div>
 
 <script>
 
-function tocar(){
-document.getElementById("musica").play();
+function abrirMusica(){
+    window.open("https://www.youtube.com/watch?v=DF3XjEhJ40Y&list=RDDF3XjEhJ40Y&start_radio=1", "_blank");
 }
 
 </script>
@@ -105,4 +110,7 @@ document.getElementById("musica").play();
 </body>
 
 </html>
+
+</html>
+
 
